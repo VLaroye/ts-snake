@@ -1,0 +1,32 @@
+@import '../../styles/constants.scss';
+
+.snake_part {
+    height: $mobile-grid-size  / $nb-of-columns;
+	width: $mobile-grid-size / $nb-of-columns;
+	background-color: red;
+	position: absolute;
+	z-index: 1;
+}
+
+.snake_part:last-of-type {
+	background-color: #f97fc0;
+}
+
+@media (min-width: 576px) {
+    .snake_part {
+		height: $tablet-grid-size  / $nb-of-columns;
+		width: $tablet-grid-size / $nb-of-columns;
+	}
+}
+
+@media (min-width: 992px) {
+    .snake_container {
+		height: $desktop-grid-size;
+		width: $desktop-grid-size;
+	}
+
+	.snake_part {
+		height: $desktop-grid-size  / $nb-of-columns;
+		width: $desktop-grid-size / $nb-of-columns;
+	}
+}

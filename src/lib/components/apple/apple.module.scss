@@ -1,0 +1,25 @@
+@import '../../styles/constants.scss';
+
+.apple {
+	background-color: rgb(104, 255, 0);
+	position: absolute;
+	height: $mobile-grid-size  / $nb-of-columns;
+	width: $mobile-grid-size / $nb-of-columns;
+	z-index: 1;
+    border: 1px solid white;
+    box-sizing: content-box;
+}
+
+@media (min-width: 576px) {
+    .apple {
+        height: $tablet-grid-size  / $nb-of-columns;
+        width: $tablet-grid-size / $nb-of-columns;
+    }
+}
+
+@media (min-width: 992px) {
+    .apple {
+        height: $desktop-grid-size  / $nb-of-columns;
+        width: $desktop-grid-size / $nb-of-columns;
+    }
+}

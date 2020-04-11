@@ -1,0 +1,69 @@
+@import '../../styles/constants.scss';
+
+.game_container {
+    position: relative;
+}
+
+.snake_container {
+    height: $mobile-grid-size;
+	width:  $mobile-grid-size;
+	border: 2px solid red;
+	box-sizing: content-box;
+	position: relative;
+}
+
+.start_overlay {
+	background-color: black;
+	opacity: 0.8;
+	height: 100%;
+	width: 100%;
+	z-index: 3;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.start_button {
+	font-family: "Nintender";
+	font-size: 3em;
+}
+
+.pause_button {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	z-index: 2;
+	line-height: 0.8em;
+}
+
+.score {
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: red;
+	border: 2px solid white;
+	border-top: none;
+	font-family: "Nintender";
+	text-align: right;
+	padding: 0.2em;
+	z-index: 2;
+}
+
+@media (min-width: 576px) {
+    .snake_container {
+		height: $tablet-grid-size;
+		width:  $tablet-grid-size;
+	}
+}
+
+@media (min-width: 992px) {
+    .snake_container {
+		height: $desktop-grid-size;
+		width: $desktop-grid-size;
+	}
+}
+
+@media (min-width: 1200px) {
+    
+}
